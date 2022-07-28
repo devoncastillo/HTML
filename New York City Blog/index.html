@@ -10,9 +10,9 @@
 
     <nav>
       <ul>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Media</a></li>
-        <li><a href="">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
     </nav>
 
@@ -74,20 +74,25 @@
         </article>
 
         <video
-          controls
-          src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-skyline-timelapse.mp4">
-          Video failed to load.
+        controls
+        src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-skyline-timelapse.mp4">
+        Video failed to load.
         </video>
 
+        <!--This embed element was added per assignment instructions, but
+        is not great practice for semantic code or accessibility, e.g.
+        there is no <embed> 'alt' attribute to describe the image-->
         <embed
         src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-skyline.jpeg" 
         type="image/jpeg">
+        <p>The New York City skyline at sunset.</p>
 
         <audio
         controls
         src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-sounds.mov">
         Your browser does not support the audio tag.
         </audio>
+        <p>The typical NYC soundscape.</p>
 
       </section>
     </main>
